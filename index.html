@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio modern siswa SMK Jurusan IT / Rekayasa Perangkat Lunak - Web Development & UI Design.">
+  <meta name="author" content="Siswa SMK Developer">
+  <meta name="keywords" content="Portfolio, Web Developer, SMK, Front-End Developer, HTML, CSS, JavaScript">
+  <title>Portfolio Siswa SMK | Junior Web Developer</title>
+
+  <!-- Google Fonts (Online dengan Fallback System Font yang Aman Offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================
+       HEADER & NAVBAR
+       ======================================================== -->
+  <header class="header" id="header">
+    <nav class="navbar container" aria-label="Navigasi Utama">
+      <!-- Brand / Logo -->
+      <a href="#home" class="nav-logo" aria-label="Halaman Utama">
+        <span class="logo-bracket">&lt;</span>Dev<span class="logo-accent">SMK</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Theme Switcher & Mobile Toggle -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Ubah Tema Gelap/Terang" title="Ganti Mode Tema">
+          <span class="theme-icon light-icon" aria-hidden="true">☀️</span>
+          <span class="theme-icon dark-icon" aria-hidden="true">🌙</span>
+        </button>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="nav-toggle" class="nav-toggle-btn" type="button" aria-label="Buka Navigasi Menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========================================================
+       MAIN CONTENT
+       ======================================================== -->
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <!-- Hero Text Left -->
+        <div class="hero-content reveal">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Student • Web Developer</span>
+          </div>
+
+          <h1 class="hero-title">
+            Membangun Website yang <span class="gradient-text">Sederhana</span>, <span class="gradient-text">Fungsional</span>, dan <span class="gradient-text">Bermakna</span>.
+          </h1>
+
+          <p class="hero-description">
+            Halo! Saya seorang siswa SMK jurusan Teknologi Informasi (RPL) dengan antusiasme tinggi pada bidang Web Development &amp; Modern UI/UX. Berfokus pada kode yang bersih, responsif, dan ramah pengguna.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>Lihat Project</span>
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="#about" class="btn btn-secondary">
+              <span>Tentang Saya</span>
+            </a>
+          </div>
+
+          <!-- Hero Tech Tags -->
+          <div class="hero-tags">
+            <span class="tag-label">Tech Focus:</span>
+            <span class="tech-pill">HTML5</span>
+            <span class="tech-pill">CSS3</span>
+            <span class="tech-pill">JavaScript</span>
+            <span class="tech-pill">Git</span>
+          </div>
+        </div>
+
+        <!-- Hero Visual Right: Code Window Mockup -->
+        <div class="hero-visual reveal">
+          <div class="code-window" aria-label="Cuplikan Kode Program">
+            <div class="code-header">
+              <div class="code-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="code-tab">
+                <span class="tab-icon">📄</span>
+                <span class="tab-title">DeveloperProfile.js</span>
+              </div>
+            </div>
+            <div class="code-body">
+              <pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Siswa SMK IT"</span>,
+  <span class="code-prop">role</span>: <span class="code-string">"Junior Web Developer"</span>,
+  <span class="code-prop">passion</span>: [<span class="code-string">"Frontend"</span>, <span class="code-string">"UI Design"</span>, <span class="code-string">"Tech"</span>],
+  <span class="code-prop">readyToLearn</span>: <span class="code-boolean">true</span>,
+  <span class="code-prop">buildDream</span>: () =&gt; {
+    <span class="code-keyword">return</span> <span class="code-string">"Creating impactful digital experiences! 🚀"</span>;
+  }
+};
+
+<span class="code-comment">// Mari ciptakan website luar biasa</span>
+<span class="code-func">console</span>.<span class="code-method">log</span>(<span class="code-variable">developer</span>.<span class="code-method">buildDream</span>());</code></pre>
+            </div>
+            <div class="code-footer">
+              <span class="status-indicator"></span>
+              <span>Status: Siap Kolaborasi &amp; Magang</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Profil Singkat</span>
+          <h2 class="section-title">Tentang Saya</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- About Narrative -->
+          <div class="about-narrative reveal">
+            <p class="about-lead">
+              Saya adalah pelajar tingkat SMK yang memiliki minat mendalam pada pengembangan web modern dan teknologi digital.
+            </p>
+            <p class="about-text">
+              Perjalanan belajar saya dimulai dari rasa penasaran bagaimana sebuah website bekerja di balik layar. Sejak itu, saya aktif melatih keterampilan logika pemrograman, slicing desain ke kode semantic, serta mengoptimalkan antarmuka agar nyaman digunakan di berbagai perangkat.
+            </p>
+
+            <div class="about-info-list">
+              <div class="info-item">
+                <span class="info-label">🎓 Pendidikan:</span>
+                <span class="info-value">SMK Negeri (Rekayasa Perangkat Lunak)</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">🎯 Fokus Bidang:</span>
+                <span class="info-value">Frontend Web Development &amp; UI Design</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">📍 Lokasi:</span>
+                <span class="info-value">Indonesia (Terbuka untuk Remote / Onsite)</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">💡 Minat Tambahan:</span>
+                <span class="info-value">Clean Code, Web Performance &amp; Git Workflow</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- About Statistics & Highlights -->
+          <div class="about-stats-wrapper reveal">
+            <div class="stats-grid">
+              <div class="stat-card">
+                <span class="stat-number">10+</span>
+                <span class="stat-title">Project Selesai</span>
+                <span class="stat-desc">Mini project, tugas sekolah &amp; latihan mandiri</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">3+</span>
+                <span class="stat-title">Teknologi Inti</span>
+                <span class="stat-desc">HTML5, CSS3 murni &amp; Vanilla JavaScript</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">2+</span>
+                <span class="stat-title">Tahun Belajar</span>
+                <span class="stat-desc">Dedikasi memahami dasar pemrograman</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">100%</span>
+                <span class="stat-title">Antusiasme</span>
+                <span class="stat-desc">Terbuka untuk belajar hal baru &amp; magang</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Keahlian Teknis</span>
+          <h2 class="section-title">Skills &amp; Kompetensi</h2>
+          <div class="section-divider"></div>
+          <p class="section-desc">Kombinasi teknologi web dasar dan alur kerja standar industri yang saya kuasai.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1: HTML5 -->
+          <article class="skill-card reveal">
+            <div class="skill-header">
+              <div class="skill-icon-box html-icon" aria-hidden="true">🌐</div>
+              <div>
+                <h3 class="skill-name">HTML5</h3>
+                <span class="skill-badge">Semantic Web</span>
+              </div>
+            </div>
+            <p class="skill-description">
+              Penerapan struktur semantic, aksesibilitas (a11y), SEO on-page dasar, dan tata letak dokumen yang standar.
+            </p>
+            <div class="skill-progress-container">
+              <div class="skill-progress-labels">
+                <span>Penguasaan</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Skill Card 2: CSS3 -->
+          <article class="skill-card reveal">
+            <div class="skill-header">
+              <div class="skill-icon-box css-icon" aria-hidden="true">🎨</div>
+              <div>
+                <h3 class="skill-name">CSS3</h3>
+                <span class="skill-badge">Modern Layout</span>
+              </div>
+            </div>
+            <p class="skill-description">
+              Flexbox, CSS Grid, Custom Variables, animasi halus, glassmorphism, dan transisi modern tanpa framework.
+            </p>
+            <div class="skill-progress-container">
+              <div class="skill-progress-labels">
+                <span>Penguasaan</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Skill Card 3: JavaScript -->
+          <article class="skill-card reveal">
+            <div class="skill-header">
+              <div class="skill-icon-box js-icon" aria-hidden="true">⚡</div>
+              <div>
+                <h3 class="skill-name">JavaScript</h3>
+                <span class="skill-badge">Vanilla ES6+</span>
+              </div>
+            </div>
+            <p class="skill-description">
+              Manipulasi DOM, Event Handling, LocalStorage, Array Methods, Fetch API, dan logika interaktif aplikasi web.
+            </p>
+            <div class="skill-progress-container">
+              <div class="skill-progress-labels">
+                <span>Penguasaan</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Skill Card 4: Git & GitHub -->
+          <article class="skill-card reveal">
+            <div class="skill-header">
+              <div class="skill-icon-box git-icon" aria-hidden="true">🌿</div>
+              <div>
+                <h3 class="skill-name">Git &amp; GitHub</h3>
+                <span class="skill-badge">Version Control</span>
+              </div>
+            </div>
+            <p class="skill-description">
+              Manajemen versi kode, branching, commit terstruktur, kolaborasi repository, dan deployment static web.
+            </p>
+            <div class="skill-progress-container">
+              <div class="skill-progress-labels">
+                <span>Penguasaan</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Skill Card 5: UI/UX Design -->
+          <article class="skill-card reveal">
+            <div class="skill-header">
+              <div class="skill-icon-box ui-icon" aria-hidden="true">📐</div>
+              <div>
+                <h3 class="skill-name">UI Design</h3>
+                <span class="skill-badge">User Centric</span>
+              </div>
+            </div>
+            <p class="skill-description">
+              Perancangan hierarki visual, kontras warna, wireframing, prototyping, dan konsistensi komponen antarmuka.
+            </p>
+            <div class="skill-progress-container">
+              <div class="skill-progress-labels">
+                <span>Penguasaan</span>
+                <span>78%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 78%;"></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Skill Card 6: Responsive Web Design -->
+          <article class="skill-card reveal">
+            <div class="skill-header">
+              <div class="skill-icon-box rwd-icon" aria-hidden="true">📱</div>
+              <div>
+                <h3 class="skill-name">Responsive Design</h3>
+                <span class="skill-badge">Mobile First</span>
+              </div>
+            </div>
+            <p class="skill-description">
+              Media queries adaptif, fluid typography, optimasi viewport di smartphone, tablet, laptop, dan monitor desktop.
+            </p>
+            <div class="skill-progress-container">
+              <div class="skill-progress-labels">
+                <span>Penguasaan</span>
+                <span>88%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Karya &amp; Eksplorasi</span>
+          <h2 class="section-title">Project Pilihan</h2>
+          <div class="section-divider"></div>
+          <p class="section-desc">Beberapa project yang saya kembangkan untuk mengasah keterampilan coding &amp; pemecahan masalah.</p>
+        </div>
+
+        <!-- Filter Category Tabs -->
+        <div class="project-filter-wrapper reveal" role="tablist" aria-label="Filter Kategori Project">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Semua</button>
+          <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web</button>
+          <button class="filter-btn" data-filter="ui" role="tab" aria-selected="false">UI</button>
+          <button class="filter-btn" data-filter="javascript" role="tab" aria-selected="false">JavaScript</button>
+        </div>
+
+        <!-- Projects Grid Container -->
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- Project 1: Web -->
+          <article class="project-card reveal" data-category="web">
+            <div class="project-preview web-preview-1">
+              <div class="preview-badge">Web</div>
+              <div class="preview-art">
+                <span class="art-icon">🏫</span>
+                <span class="art-label">School Portal</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-category-tag">Web Development</div>
+              <h3 class="project-title">Website Profil Sekolah Modern</h3>
+              <p class="project-description">
+                Landing page responsif untuk profil sekolah kejuruan dengan navigasi kegiatan, galeri jurusan, dan agenda pengumuman dinamis.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS Grid</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                  <span>Lihat Project</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+                <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: JavaScript -->
+          <article class="project-card reveal" data-category="javascript">
+            <div class="project-preview js-preview-1">
+              <div class="preview-badge">JavaScript</div>
+              <div class="preview-art">
+                <span class="art-icon">📝</span>
+                <span class="art-label">Task Tracker</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-category-tag">JavaScript App</div>
+              <h3 class="project-title">Interactive Task &amp; Todo Manager</h3>
+              <p class="project-description">
+                Aplikasi manajemen tugas harian berbasis browser dengan fitur filter status prioritas, search, dan penyimpanan data LocalStorage.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Vanilla JS</span>
+                <span class="tag">LocalStorage</span>
+                <span class="tag">CSS Flexbox</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                  <span>Lihat Project</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+                <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: UI -->
+          <article class="project-card reveal" data-category="ui">
+            <div class="project-preview ui-preview-1">
+              <div class="preview-badge">UI</div>
+              <div class="preview-art">
+                <span class="art-icon">📊</span>
+                <span class="art-label">Analytics UI</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-category-tag">UI Design</div>
+              <h3 class="project-title">Student Dashboard Interface</h3>
+              <p class="project-description">
+                Desain dashboard akademik siswa dengan visualisasi kartu nilai, grafik kehadiran CSS murni, dan layout modular dark/light theme.
+              </p>
+              <div class="project-tags">
+                <span class="tag">UI/UX</span>
+                <span class="tag">CSS Variables</span>
+                <span class="tag">Figma</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                  <span>Lihat Project</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+                <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Web -->
+          <article class="project-card reveal" data-category="web">
+            <div class="project-preview web-preview-2">
+              <div class="preview-badge">Web</div>
+              <div class="preview-art">
+                <span class="art-icon">☕</span>
+                <span class="art-label">Coffee &amp; Space</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-category-tag">Web Development</div>
+              <h3 class="project-title">Katalog &amp; Landing Page Kedai Kopi</h3>
+              <p class="project-description">
+                Website showcase produk kedai kopi lokal dengan menu interaktif, filter kategori minuman, estimasi harga, dan desain estetis.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS Animations</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                  <span>Lihat Project</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+                <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: JavaScript -->
+          <article class="project-card reveal" data-category="javascript">
+            <div class="project-preview js-preview-2">
+              <div class="preview-badge">JavaScript</div>
+              <div class="preview-art">
+                <span class="art-icon">🧮</span>
+                <span class="art-label">Dev Calculator</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-category-tag">JavaScript App</div>
+              <h3 class="project-title">Kalkulator Nilai &amp; Konversi IT</h3>
+              <p class="project-description">
+                Tool utilitas untuk menghitung rata-rata nilai rapor siswa serta konverter sistem bilangan (Biner, Desimal, Heksadesimal).
+              </p>
+              <div class="project-tags">
+                <span class="tag">Algorithms</span>
+                <span class="tag">DOM Scripting</span>
+                <span class="tag">CSS Custom</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                  <span>Lihat Project</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+                <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: UI -->
+          <article class="project-card reveal" data-category="ui">
+            <div class="project-preview ui-preview-2">
+              <div class="preview-badge">UI</div>
+              <div class="preview-art">
+                <span class="art-icon">✨</span>
+                <span class="art-label">Design System</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-category-tag">UI Design</div>
+              <h3 class="project-title">Modern Component Kit &amp; Styleguide</h3>
+              <p class="project-description">
+                Eksplorasi koleksi komponen UI murni seperti button variants, modals, toast alert, badging, dan color palettes siap pakai.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Design Tokens</span>
+                <span class="tag">CSS Library</span>
+                <span class="tag">Atomic Design</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                  <span>Lihat Project</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+                <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Perjalanan Belajar</span>
+          <h2 class="section-title">Timeline Pengalaman</h2>
+          <div class="section-divider"></div>
+          <p class="section-desc">Langkah demi langkah dalam mendalami dunia rekayasa perangkat lunak dan web development.</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-year-badge">2026</div>
+              <h3 class="timeline-title">Web Development &amp; Modern Frontend</h3>
+              <span class="timeline-institution">Eksplorasi Mandiri &amp; Proyek Praktik SMK</span>
+              <p class="timeline-text">
+                Fokus mendalami arsitektur web modern, vanilla JavaScript ES6+, integrasi REST API, optimasi performa halaman, dan persiapan portofolio untuk praktik kerja lapangan (PKL/Magang).
+              </p>
+              <div class="timeline-tags">
+                <span class="tech-pill">Modern JS</span>
+                <span class="tech-pill">Render Deployment</span>
+                <span class="tech-pill">Clean Architecture</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-year-badge">2025</div>
+              <h3 class="timeline-title">UI/UX Design &amp; Responsive Layout</h3>
+              <span class="timeline-institution">Mata Pelajaran Desain Grafis &amp; Web</span>
+              <p class="timeline-text">
+                Mempelajari prinsip desain antarmuka, wireframing, prototipe fungsional, penggunaan CSS Grid, Flexbox, serta standarisasi pengalaman pengguna di beragam ukuran layar.
+              </p>
+              <div class="timeline-tags">
+                <span class="tech-pill">UI/UX Basics</span>
+                <span class="tech-pill">CSS Grid &amp; Flex</span>
+                <span class="tech-pill">Accessibility</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-year-badge">2025</div>
+              <h3 class="timeline-title">Git, GitHub &amp; Version Control</h3>
+              <span class="timeline-institution">Kolaborasi Project &amp; Manajemen Kode</span>
+              <p class="timeline-text">
+                Menerapkan alur kerja Git untuk pelacakan kode, pembuatan branch tugas, resolve conflict sederhana, serta publikasi repository project secara terbuka di GitHub.
+              </p>
+              <div class="timeline-tags">
+                <span class="tech-pill">Git CLI</span>
+                <span class="tech-pill">GitHub Workflow</span>
+                <span class="tech-pill">Open Source</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-year-badge">2024</div>
+              <h3 class="timeline-title">Dasar Pemrograman &amp; Algoritma</h3>
+              <span class="timeline-institution">Awal Masuk SMK Jurusan RPL/IT</span>
+              <p class="timeline-text">
+                Memahami logika pemrograman dasar, variabel, tipe data, pengkondisian logika, perulangan (loops), serta pengenalan struktur HTML dan styling dasar CSS.
+              </p>
+              <div class="timeline-tags">
+                <span class="tech-pill">Logika &amp; Algoritma</span>
+                <span class="tech-pill">HTML &amp; CSS Dasar</span>
+                <span class="tech-pill">Problem Solving</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Mari Terhubung</span>
+          <h2 class="section-title">Kontak &amp; Pesan</h2>
+          <div class="section-divider"></div>
+          <p class="section-desc">Punya pertanyaan, tawaran project, atau kesempatan magang? Jangan ragu untuk menghubungi saya!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info-wrapper reveal">
+            <h3 class="contact-info-heading">Informasi Kontak</h3>
+            <p class="contact-info-desc">
+              Saya selalu terbuka untuk berdiskusi seputar dunia web development, kolaborasi project sekolah, maupun peluang magang.
+            </p>
+
+            <div class="contact-cards">
+              <!-- Email Card -->
+              <a href="mailto:siswa.dev@example.com" class="contact-card">
+                <div class="contact-card-icon" aria-hidden="true">✉️</div>
+                <div class="contact-card-details">
+                  <span class="contact-card-label">Email</span>
+                  <span class="contact-card-value">siswa.dev@example.com</span>
+                </div>
+              </a>
+
+              <!-- GitHub Card -->
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-card">
+                <div class="contact-card-icon" aria-hidden="true">🐙</div>
+                <div class="contact-card-details">
+                  <span class="contact-card-label">GitHub</span>
+                  <span class="contact-card-value">github.com/siswadev-smk</span>
+                </div>
+              </a>
+
+              <!-- Instagram Card -->
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="contact-card">
+                <div class="contact-card-icon" aria-hidden="true">📸</div>
+                <div class="contact-card-details">
+                  <span class="contact-card-label">Instagram</span>
+                  <span class="contact-card-value">@siswadev.tech</span>
+                </div>
+              </a>
+
+              <!-- Location Card -->
+              <div class="contact-card non-clickable">
+                <div class="contact-card-icon" aria-hidden="true">📍</div>
+                <div class="contact-card-details">
+                  <span class="contact-card-label">Lokasi</span>
+                  <span class="contact-card-value">Indonesia (WIB)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form (Static Simulation) -->
+          <div class="contact-form-wrapper reveal">
+            <h3 class="contact-form-heading">Kirim Pesan</h3>
+            
+            <!-- Alert Banner Notification (JavaScript Controlled) -->
+            <div id="form-alert" class="form-alert" role="alert" aria-live="polite"></div>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              <!-- Field Nama -->
+              <div class="form-group">
+                <label for="name" class="form-label">Nama Lengkap <span class="required-mark">*</span></label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  class="form-input" 
+                  placeholder="Masukkan nama Anda..." 
+                  autocomplete="name"
+                  required
+                >
+                <span class="form-error-msg" id="name-error"></span>
+              </div>
+
+              <!-- Field Email -->
+              <div class="form-group">
+                <label for="email" class="form-label">Alamat Email <span class="required-mark">*</span></label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder="contoh@email.com" 
+                  autocomplete="email"
+                  required
+                >
+                <span class="form-error-msg" id="email-error"></span>
+              </div>
+
+              <!-- Field Pesan -->
+              <div class="form-group">
+                <label for="message" class="form-label">Pesan <span class="required-mark">*</span></label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  class="form-textarea" 
+                  rows="5" 
+                  placeholder="Tuliskan pesan, pertanyaan, atau tawaran kolaborasi Anda di sini..." 
+                  required
+                ></textarea>
+                <span class="form-error-msg" id="message-error"></span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" id="submit-btn" class="btn btn-primary btn-block">
+                <span>Kirim Pesan</span>
+                <span class="btn-icon" aria-hidden="true">📤</span>
+              </button>
+
+              <p class="form-notice">
+                ℹ️ <em>Formulir ini bekerja secara static dengan validasi JavaScript murni (siap dihubungkan ke Formspree, EmailJS, atau backend di masa mendatang).</em>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================
+       FOOTER
+       ======================================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo">
+          <span class="logo-bracket">&lt;</span>Dev<span class="logo-accent">SMK</span><span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline">
+          Portofolio digital siswa SMK yang berdedikasi membangun web dengan kode bersih, fungsional, dan performa optimal.
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <span class="footer-heading">Navigasi Cepat</span>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-extra">
+        <span class="footer-heading">Informasi Tambahan</span>
+        <p class="footer-status">🟢 Status: <strong>Open for Internship / PKL</strong></p>
+        <p class="footer-tech">Dibangun murni dengan HTML5, CSS3, &amp; Vanilla JS.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> <strong>Siswa SMK Web Developer</strong>. All rights reserved.
+        </p>
+        <p class="render-badge">
+          🚀 Ready for <strong>Render Static Site</strong>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       BACK TO TOP BUTTON
+       ======================================================== -->
+  <button id="back-to-top" class="back-to-top-btn" type="button" aria-label="Kembali ke atas" title="Kembali ke atas">
+    <span aria-hidden="true">↑</span>
+  </button>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
